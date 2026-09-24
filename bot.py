@@ -25,7 +25,7 @@ ADMIN_ID = 8530689522
 DATA_FILE = "registration_data.json"
 
 MALE_START = 500
-FEMALE_START = 1500
+FEMALE_START = 1505
 
 QIRAAT_GROUP = "https://t.me/+hV1SdDU2RPVmNGQ0"
 MALE_GROUP = "https://t.me/+R1glQTVbUW44OTBk"
