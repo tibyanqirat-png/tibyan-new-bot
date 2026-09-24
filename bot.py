@@ -357,7 +357,7 @@ def main():
     app.add_handler(TypeHandler(Update, handle_join_request), group=1)
 
     app.add_handler(MessageHandler(filters.CONTACT, handle_contact))
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND & filters.ChatType.PRIVATE, handle_text))
 
     app.run_polling()
 
