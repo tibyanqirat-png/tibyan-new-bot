@@ -104,6 +104,9 @@ async def register(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if update.effective_chat.type != "private":
+        return
+
     text = update.message.text.strip()
 
     if text == "ለመመዝገብ":
